@@ -1,0 +1,44 @@
+.add{
+    display: block;
+    align-content: center;
+    /*padding-left: 0%;*/
+    border:2px solid lightgray;
+    border-radius:10px; 
+    padding-top: 20px;
+    background-color: lightgray;
+}
+.first{
+    margin-left:25%;
+}
+input[type=text], input[type=date] , .form-control {
+    width: 80%;
+    padding: 5px 0px;
+    margin-top: 8px;
+
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 0.45rem;
+}
+lable{
+    padding: 5px;
+     margin-top: 8px;
+    float: right;
+    align-content: right;
+}
+.form-group{
+    padding-top: 10px;
+    margin-bottom: 5px;
+}
+.first{
+    margin-top: 100px;
+}
+.addmodify{
+    margin-left:80px;
+}
+.fun{
+     margin-left:280px;
+}
+.btn{
+    width:100px;
+}
