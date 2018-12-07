@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+
+
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/datatables.min.css">
+    <link rel="stylesheet" href="../static/css/task.css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 text-right sign_out_div">
+                <input type="button" id="signout_btn" class="btn btn-success font-small" value="Sign Out">
+            </div>
+        </div>
+        <div class="row justify-content-center align-items-center tasks_div">
+           <div class="col-sm-6">
+                <div class="add">
+                    <form>
+                        <div class="form-group row">
+                            <lable class="col-sm-4 lable text-right"><strong>Task Name :</strong></lable>
+                            <div class="col-sm-8">
+                                <input type="text" id="task_name" class="form font-small" placeholder="User ID" /><br><br>
+                            </div>
+                        </div>
+                        <div class="form-group row ">
+                            <lable class="col-sm-4 lable text-right"><strong>DATE:</strong></lable>
+                            <div class="col-sm-8">
+                                <input type="date" id="task_date" class="form font-small" placeholder="dd/mm/yyyy" /><br><br>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-4 lable text-right" for="task_status"><strong>Task Status :</strong></label>
+                            <div class="col-sm-8">
+                                <select class="form-control" id="task_status">
+                                    <option>Not started</option>
+                                    <option>In progress</option>
+                                    <option>Finished</option>
+                                 </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-12 text-center addmodify ">
+                                <input type="button" id="add_btn" class="btn btn-success font-small " value="Add" />
+                                <input type="button" id="modify_btn" class="btn btn-info font-small " value="Modify" />
+                            </div>
+                        </div>
+                        <div class="alert alert-dismissible fade show animated alert2" id="task_alert" style="display:none;" value="1" role="alert"></div>
+
+                    </form>
+                </div>
+                <div class="display_data">
+                    <form>
+                        <div class="form-group row">
+                            <div class="input-group col-sm-8">
+                                <div class="input-group-prepend date_div">
+                                    <input type="date" id="due_date" class="form font-small" placeholder="dd/mm/yyyy">
+                                </div>
+                                <input type="button" id="due_btn" class="btn btn-info font-small " value="Due">
+                            </div>
+                            <div class="col-sm-4">
+                                <input type="button" id="overdue_btn" class="btn btn-warning font-small " value="Overdue">
+                                <input type="button" id="finished_btn" class="btn btn-success font-small " value="Finished">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="row form-group  justify-content-center align-items-center table_outer_div">
+            <div class="table_div" style="display:none;">
+           <div class="col-sm-8 text-center table">
+                <table id="task_table" class="display" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>Task_Name</th>
+                            <th>Task_date</th>
+                            <th>Task Status</th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <th>Task_Name</th>
+                            <th>Task_date</th>
+                            <th>Task Status</th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+<!--<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/tether.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/datatables.min.js"></script>
+<script src="js/bootstrap-datepicker.min.js"></script>
+<script src="js/default.js"></script>-->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/tether.min.js"></script>
+<script src="js/datatables.min.js"></script>
+<script src="js/task.js"></script>
+
+
+</html>

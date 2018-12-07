@@ -1,0 +1,64 @@
+.table_outer_div{
+margin-top: 50px;
+}
+.table_div{
+border: 1px solid black;
+border-radius: 0.25rem;
+padding-top:10px;
+}
+/*#task_table{
+padding 8px;
+}*/
+.tasks_div,
+.login_div_container{
+    margin-top: 100px;
+}
+.add{
+    display: block;
+    align-content: center;
+    border:2px solid #e6e6e6;
+    border-radius:10px; 
+    padding-top: 20px;
+    background-color: #e6e6e6;
+}
+.first{
+    margin-left:25%;
+}
+#login_div input[type=text]{
+ width: 100%;
+padding:8px;
+}
+input[type=text], input[type=date] , .form-control {
+    width: 80%;
+    padding: 5px 0px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 0.35rem;
+}
+lable{
+    padding: 5px;
+     margin-top: 8px;
+    float: right;
+    align-content: right;
+}
+.form-group{
+    padding-top: 10px;
+    margin-bottom: 5px;
+}
+.addmodify{
+    margin-left:80px;
+}
+.btn{
+    width:auto;
+    height:40px;
+}
+#add_btn{
+        margin-left: 170px;
+}
+#due_date{
+    width:388px;
+}
+.sign_out_div{
+    margin-top: 20px;
+}
