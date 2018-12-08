@@ -1,4 +1,4 @@
-var website = 'http://10.154.194.146:6007/'
+var website = 'http://127.0.0.1:6007/'
 $(document).ready(function () {
     $("#login_submit").on("click", function(e){
         e.preventDefault();

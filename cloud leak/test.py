@@ -82,6 +82,7 @@ def due():
         print ("inside due")
         rcvData=request.get_json()
         task_date=rcvData['date']
+        print(task_date)
         valid = Control().due(task_date)
         print (valid)
         return jsonify(valid)
@@ -100,4 +101,4 @@ def finished():
 
 if (__name__ == "__main__"):
         app.secret_key = 'mysecret'
-        app.run(host="10.154.194.146",port = 6007,debug=True)
+        app.run(host="127.0.0.1",port = 6007,debug=True)

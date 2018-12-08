@@ -1,4 +1,5 @@
-import MySQLdb
+import pymysql 
+pymysql.install_as_MySQLdb()
 import csv
 import sys
 
@@ -6,7 +7,7 @@ class SQLDatabase:
 
     def __init__(self):
         
-        self.db = MySQLdb.connect(host="10.154.194.146",user="vrgdev",passwd="Redhat@12345",db="GRID")
+        self.db = pymysql.connect(host="127.0.0.1",user="root",passwd="Ugesh@1995",db="GRID")
 
     def add(self,task_name,task_date,task_status):
 
@@ -36,7 +37,7 @@ class SQLDatabase:
     def due(self,task_date) :
         print("fetching due tasks")
         cursor = self.db.cursor()
-        sql="SELECT * FROM task_table where task_date <'%s'"%(task_date)
+        sql="SELECT * FROM task_table where task_date LIKE '%s'"%(task_date)
         cursor.execute(sql)
         duelist=cursor.fetchall()
         self.db.commit();
@@ -48,7 +49,7 @@ class SQLDatabase:
 
         print("fetching overdue tasks")
         cursor = self.db.cursor()
-        sql="SELECT * FROM task_table where task_date >'%s'"%(task_date)
+        sql="SELECT * FROM task_table where task_date <'%s'"%(task_date)
         cursor.execute(sql)
         overduelist=cursor.fetchall()
         self.db.commit();

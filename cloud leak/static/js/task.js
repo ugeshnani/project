@@ -1,4 +1,4 @@
-var website = "http://10.154.194.146:6007/";
+var website = "http://127.0.0.1:6007/";
 
 $(function () {
 var user_role = check_session();
@@ -33,7 +33,8 @@ $(".table_div").css("display", "block");
   $("#due_btn").on("click", function (e) {
     event.preventDefault();
     $(".table_div").css("display", "block");
-    var date = $("due_date").val();
+    var date = $("#due_date").val();
+    console.log(date);
     due(date);
   });
 
@@ -145,6 +146,7 @@ $("#task_alert").html(data['pdf2']).css("display", "block").addClass('animated f
 function due(date) {
 
   var dataString = '{ "date": "' + date + '"}';
+  console.log(dataString);
   $.ajax({
     type: 'POST',
     url: website + "due",

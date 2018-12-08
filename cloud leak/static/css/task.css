@@ -11,7 +11,7 @@ padding 8px;
 }*/
 .tasks_div,
 .login_div_container{
-    margin-top: 100px;
+    margin-top: 150px;
 }
 .add{
     display: block;
@@ -20,6 +20,7 @@ padding 8px;
     border-radius:10px; 
     padding-top: 20px;
     background-color: #e6e6e6;
+    margin-top:-30px;
 }
 .first{
     margin-left:25%;
