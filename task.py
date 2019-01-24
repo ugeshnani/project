@@ -1,5 +1,5 @@
 import sys
-a=input("Enter series :")
+a=str(input("Enter series :"))
 l=0
 b=0
 front_dict={}
