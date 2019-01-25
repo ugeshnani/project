@@ -7,6 +7,7 @@ back_dict={}
 front_list=[]
 back_list=[]
 i=0
+count=0
 while i < len(a) :
 
     for j in range(int(a[i])) :
@@ -39,10 +40,11 @@ for i in back_dict.keys() :
        if back_dict[i] == max_y :
                 highest_point.append([i,max_y])
 
-#for value in front_dict.values():
-##		count=count+1
+for value in front_dict.values():
+	if value == max_y:
+		count=count+1
+print(count)
 
-count=back_dict.values().count(max_y)
 l=l+count
 highest_point.sort(key=lambda x: x[0],reverse=True)
 
@@ -122,5 +124,4 @@ for i in range(max_y,min_y-1,-1) :
             sys.stdout.write(" ")
 
     sys.stdout.write("\n")
-                                      
                                       
